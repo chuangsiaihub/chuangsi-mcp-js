@@ -1,0 +1,37 @@
+{
+  "name": "chuangsiai-mcp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "inspector": "npx @modelcontextprotocol/inspector",
+    "build": "tsc",
+    "start": "node src/index"
+  },
+  "keywords": [],
+  "author": {
+    "name": "chuangsiai",
+    "email": "service@chuangsiai.com",
+    "url": "https://chuangsiai.com"
+  },
+  "license": "ISC",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.54.0",
+    "@modelcontextprotocol/sdk": "^1.12.3",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "chuangsiai-sdk": "^1.0.6",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.3",
+    "nodemon": "2.0.22",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
