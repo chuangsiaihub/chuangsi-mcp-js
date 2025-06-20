@@ -28,7 +28,7 @@ export function createServer(authHeader: string, strategyKey: string) {
             if (!content) {
                 return { content: [{ type: "text", text: "请提供检查内容" }] };
             }
-            const client = new ChuangsiaiClient({ accessKey: authHeader, })
+            const client = new ChuangsiaiClient({ apiKey: authHeader, })
             const data = await client.inputGuardrail({ content, strategyKey })
             if (data.code !== 0) {
                 return { content: [{ type: "text", text: data.message }] };
@@ -59,7 +59,7 @@ labelName：${data.labelName || ''}`
             if (!content) {
                 return { content: [{ type: "text", text: "请提供检查内容" }] };
             }
-            const client = new ChuangsiaiClient({ accessKey: authHeader, })
+            const client = new ChuangsiaiClient({ apiKey: authHeader, })
             const data = await client.outputGuardrail({ content, strategyKey })
             if (data.code !== 0) {
                 return { content: [{ type: "text", text: data.message }] };
