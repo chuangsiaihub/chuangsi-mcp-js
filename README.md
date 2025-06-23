@@ -24,8 +24,8 @@ https://chuangsiai.com
   "mcpServers": {
     "chuangsiai": {
       "name": "chuangsiai-mcp",
-      "type": "sse", // 流式传输协议
-      "baseUrl": "https://mcp.chuangsiai.com/sse",
+      "type": "sse",
+      "url": "https://mcp.chuangsiai.com/sse",
       "headers": {
         "Authorization": "【你的API Key】",
         "StrategyKey": "【你的策略标识】"
